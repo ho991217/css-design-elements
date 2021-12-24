@@ -10,7 +10,7 @@
   --white: #dde1e7;
   --border-radius: calc(var(--height) / 10);
   --shadow-px-plus: calc(var(--height) / 10);
-  --shadwo-blur-2: calc(var(--height) / 10);
+  --shadow-blur-2: calc(var(--height) / 10);
   --shadow-blur: calc(var(--shadow-px-plus) * 2);
   --shadow-px-minus: calc(0px - var(--shadow-px-plus));
 }
@@ -32,7 +32,6 @@
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-px-minus) var(--shadow-px-minus) var(--shadow-blur)
       #ffffff73,
-    var(--shadow-px-plus) var(--shadow-px-plus) var(--shadwo-blur-2)
+    var(--shadow-px-plus) var(--shadow-px-plus) var(--shadow-blur-2)
       rgba(94, 104, 121, 0.288);
 }
-
