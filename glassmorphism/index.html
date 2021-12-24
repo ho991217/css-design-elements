@@ -1,12 +1,40 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Glassmorphism</title>
-</head>
-<body>
-    
-</body>
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        id="logo"
+        src="https://image.rocketpunch.com/company/233/vivarepublica_logo_1548980012.png?s=400x400&t=inside"
+      />
+      <div class="glassmorphism">
+        <h2>toss</h2>
+        <p>내 모든 금융 내역을 한눈에 조회하고 한 곳에서 관리하세요.</p>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const card = document.querySelector(".glassmorphism");
+
+    card.addEventListener("mouseleave", (e) => {
+      card.style.transform = "rotate(0deg)";
+    });
+    card.addEventListener("mousemove", (e) => {
+      const offsetX = (e.offsetX - 220) / 200;
+      const offsetY = (e.offsetY - 40) / 40;
+      card.style.transform =
+        "rotateY(" + 7 * offsetX + "deg)" + "rotateX(" + -7 * offsetY + "deg)";
+    });
+  </script>
 </html>

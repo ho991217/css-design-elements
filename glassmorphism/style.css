@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+#logo {
+  position: absolute;
+  z-index: 0;
+  top: 12rem;
+  left: 27rem;
+}
+
+.container {
+  height: 900px;
+  width: 1600px;
+  background: rgb(233, 233, 233);
+  /* background-image: url(https://static.toss.im/3d/toss-im-web-intro-still-start.jpg); */
+  display: grid;
+  place-items: center;
+  perspective: 600px;
+}
+
+.glassmorphism {
+  padding: 15px 25px;
+  z-index: 1;
+  border-radius: 1em;
+  transition: transform 0.07s ease-out;
+  user-select: none;
+}
+
+:root {
+  --background-color: rgba(255, 255, 255, 0.2);
+  --blur-amount: blur(20px);
+}
+
+/* 여기서부터 사용 */
+.glassmorphism {
+  background: var(--background-color);
+  backdrop-filter: var(--blur-amount);
+  border: solid 1px transparent;
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.02);
+}
