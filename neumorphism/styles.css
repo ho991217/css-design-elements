@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* --------- 사용 가능 --------- */
+:root {
+  --height: 100px;
+  --width: 100px;
+  --white: #dde1e7;
+  --border-radius: calc(var(--height) / 10);
+  --shadow-px-plus: calc(var(--height) / 10);
+  --shadwo-blur-2: calc(var(--height) / 10);
+  --shadow-blur: calc(var(--shadow-px-plus) * 2);
+  --shadow-px-minus: calc(0px - var(--shadow-px-plus));
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  height: inherit;
+  /* ----------- */
+  background-color: var(--white);
+}
+
+.neumorphism-1 {
+  height: var(--height);
+  width: var(--width);
+  background: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-px-minus) var(--shadow-px-minus) var(--shadow-blur)
+      #ffffff73,
+    var(--shadow-px-plus) var(--shadow-px-plus) var(--shadwo-blur-2)
+      rgba(94, 104, 121, 0.288);
+}
+
